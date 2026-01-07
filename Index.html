@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Manager</title>
+  <link rel="stylesheet" href="Index.css">
+</head>
+<body>
+
+  <div class="container">
+    <header class="header">
+      <h1>Task Manager</h1>
+      <button id="addTaskBtn">+ Add Task</button>
+    </header>
+
+    <div class="dashboard">
+
+      <!-- TODAY -->
+      <div class="card">
+        <h2>Today</h2>
+
+        <div class="status-grid">
+          <div class="status ongoing">Ongoing</div>
+          <div class="status process">In Process</div>
+          <div class="status complete">Complete</div>
+          <div class="status cancel">Cancel</div>
+        </div>
+
+        <h3>Tasks</h3>
+        <ul id="taskList"></ul>
+      </div>
+
+      <!-- PROJECTS -->
+      <div class="card">
+        <h2>Projects</h2>
+
+        <div class="progress-item">
+          <span>App Project</span>
+          <div class="progress"><div style="width:35%"></div></div>
+        </div>
+
+        <div class="progress-item">
+          <span>Dashboard UI</span>
+          <div class="progress"><div style="width:28%"></div></div>
+        </div>
+
+        <div class="progress-item">
+          <span>UX Planning</span>
+          <div class="progress"><div style="width:62%"></div></div>
+        </div>
+      </div>
+
+      <!-- REPORT -->
+      <div class="card">
+        <h2>Report</h2>
+
+        <div class="report">
+          <div class="box purple">
+            Completed <strong id="completedCount">0</strong>
+          </div>
+          <div class="box orange">
+            Ongoing <strong id="ongoingCount">0</strong>
+          </div>
+        </div>
+
+        <div class="chart">Chart Area</div>
+      </div>
+
+    </div>
+
+    <!-- MOBILE VIEW -->
+    <div class="mobile">
+      <h2>Mobile View</h2>
+      <div class="phone">
+        <h3>Today</h3>
+        <div class="status-grid">
+          <div class="status ongoing">Ongoing</div>
+          <div class="status process">In Process</div>
+          <div class="status complete">Complete</div>
+          <div class="status cancel">Cancel</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="Index.js"></script>
+</body>
+</html>
